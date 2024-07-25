@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Batteries</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda</h1> <!--Hay quie cambiarlo a Power Batteries-->
+        <div class="container-icon"><!--Código para el ícono de la bolsa de compra, pero el SVG tiene una clase de otro nombre-->
+            <svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+                <div class="container-cart-products hidden-cart">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos mocasines</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+                    </div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+                </div>
+        </div>
+    </header>
+    
+    <div class="container-items"> <!--Este div va a contener y organizar las baterías-->
+        <div class="item">  <!--Producto 1-->
+          <figure> <!--No sé muy bien para qué esta etiqueta-->
+              <img src="./Imagenes/zapato-hombre-805.jpg" alt="Zapato Hombre"> <!--En el vídeo se usa un link de internet, yo creo que es mejor descagar a imágen y añadirla a la carpeta-->
+          </figure>
+          <div class="info-product"> <!--Se hace un div luego de figure para separar el texto y precio de la imagen-->
+              <h2>Zapatos mocasines</h2>
+              <p class="price">$80</p>
+              <button>Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="item">  <!--Producto 2-->
+            <figure> 
+                <img src="./Imagenes/Reloj.jfif" alt="Reloj">
+            </figure>
+            <div class="info-product"> 
+                <h2>Reloj Wisconsin</h2>
+                <p class="price">$100</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div> 
+        <div class="item">  <!--Producto 3-->
+            <figure> 
+                <img src="./Imagenes/Perfume.webp" alt="Perfume Eros">
+            </figure>
+            <div class="info-product"> 
+                <h2>Eros by Versace</h2>
+                <p class="price">$200</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">  <!--Producto 4-->
+            <figure> 
+                <img src="./Imagenes/Audifonos.jpg" alt="Audifonos">
+            </figure>
+            <div class="info-product">
+                <h2>Audífonos Steren</h2>
+                <p class="price">$50</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+  </div>
+  <script src="./Index.js"></script>
+</body>
+</html>
